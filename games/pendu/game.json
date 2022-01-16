@@ -1,0 +1,9 @@
+{
+    "name" : "Le pendu",
+    "icon" : "icon.png",
+    "banner" : "banner.jpg",
+    "description_file" : false,
+    "description" : "C'est le jeu officiel du pendu !",
+    "controller" : "controller.js",
+    "monitor": "monitor.js"
+}
