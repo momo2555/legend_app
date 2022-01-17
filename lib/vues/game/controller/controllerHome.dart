@@ -33,14 +33,14 @@ class _ControllerHomeState extends State<ControllerHome> {
     // TODO: implement initState
     super.initState();
     //launch the game: the client is the controller and the server is the monitor !
-    GameClient gameClient = GameClient();
+    GameClient gameClient = GameClient(monitor: widget.monitor);
     gameClient.run();
     gameClient.launcheGame(widget.game);
   }
 
   @override
   Widget build(BuildContext context) {
-    print("https://" + widget.monitor.getIp + ":2226/controller.html");
+    print("http://" + widget.monitor.getIp + ":2226/"+widget.game.getControllerPage);
     return SafeArea(
       child: Scaffold(
           body: WebView(

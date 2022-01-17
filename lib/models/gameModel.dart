@@ -49,5 +49,16 @@ class GameModel {
   String get getControllerPage {
     return controllerPage;
   }
+
+  Map<String, dynamic> toObject () {
+    return {
+      "gameId" : nameId,
+      "monitor" : monitorPage,
+      "controller" : controllerPage,
+      "banner": bannerUrl,
+      "icon" : iconUrl,
+      "name" : name,
+    };
+  }
   
 }
