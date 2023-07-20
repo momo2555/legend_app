@@ -14,7 +14,7 @@ void main() async {
   /*SystemChrome.setPreferredOrientations([DeviceOrzerfdeientation.landscapeRight])
       .then((_) {
     */
-  runApp(new MyApp()); /*
+  runApp(const MyApp()); /*
   });*/
 }
 
